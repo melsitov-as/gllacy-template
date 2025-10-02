@@ -55,6 +55,83 @@
         </ul>
       </div>
     </header>
+    <main class="main">
+      <div class="breadcrumbs"> 
+        <div class="breadcrumbs_container"> 
+          <div class="breadcrumbs__content-container">
+            <div class="breadcrumbs__title-container">
+              <ul class="breadcrumbs__list"> 
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href=""><span class="breadcrumbs__text">Главная </span></a></li>
+                <li class="breadcrumbs__item"> <a class="breadcrumbs__link" href=""><span class="breadcrumbs__text">Каталог</span></a></li>
+                <li class="breadcrumbs__item"> <span class="breadcrumbs__text-ordinary">Сливочное</span></li>
+              </ul>
+              <h1 class="breadcrumbs__title">Сливочное мороженое</h1>
+            </div>
+            <div class="breadcrumbs__contacts-container"> <span class="breadcrumbs__contacts-time">c 10 до 20, ежедневно</span><span class="breadcrumbs__contacts-phone">8 812 450-25-25</span></div>
+          </div>
+        </div>
+      </div>
+      <section class="selection"> 
+        <h2 class="visually-hidden">Выбор мороженого</h2>
+        <div class="selection__container"> 
+          <form class="selection__form" action="#" method="#">
+            <fieldset class="selection__form-item-fieldset selection__form-item-fieldset--sort"> 
+              <legend class="selection__form-item-legend-sort">Сортировка:</legend><a class="selection__form-sort-button" href="#"><span class="selection__form-sort-button-option">по популярности</span><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.5 10L0 0H11" fill="#ECF1EE"/>
+</svg>
+</a>
+            </fieldset>
+            <fieldset class="selection__form-item-fieldset selection__form-item--price">
+              <legend class="selection__form-item-legend-price">Цена:
+                <input class="selection__form-filters-min-input" type="text" value="100" id="input-0"><span> ₽ -</span>
+                <input class="selection__form-filters-max-input" type="text" value="500" id="input-1"><span> ₽ </span>
+              </legend>
+              <div class="selection__form-item-price-container"> 
+                <div class="range-slider" id="range-slider"></div>
+              </div>
+            </fieldset>
+            <fieldset class="selection__form-item-fieldset selection__form-item--fat"> 
+              <legend class="selection__form-item-legend-fat">Жирность:</legend>
+              <div class="selection__form-item-fat-container"> 
+                <label class="selection__form-item-fat-label" for="0">
+                  <input class="visually-hidden selection__form-item-fat-input" type="radio" id="0" name="fat"><span class="selection__form-item-fat-custom-input"> </span><span class="selection__form-item-fat-text">0%</span>
+                </label>
+                <label class="selection__form-item-fat-label" for="less-10">
+                  <input class="visually-hidden selection__form-item-fat-input" type="radio" id="less-10" name="fat"><span class="selection__form-item-fat-custom-input"> </span><span class="selection__form-item-fat-text">до 10%</span>
+                </label>
+                <label class="selection__form-item-fat-label" for="less-30">
+                  <input class="visually-hidden selection__form-item-fat-input" type="radio" id="less-30" name="fat"><span class="selection__form-item-fat-custom-input"> </span><span class="selection__form-item-fat-text">до 30%</span>
+                </label>
+                <label class="selection__form-item-fat-label" for="more-30">
+                  <input class="visually-hidden selection__form-item-fat-input" type="radio" id="more-30" name="fat"><span class="selection__form-item-fat-custom-input"> </span><span class="selection__form-item-fat-text">выше 30%</span>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="selection__form-item-fieldset selection__form-item--fill">
+              <legend class="selection__form-item-legend-fill">Наполнители</legend>
+              <div class="selection__form-item-fill-container"> 
+                <label class="selection__form-item-fill-label" for="chocolate">
+                  <input class="visually-hidden selection__form-item-fill-input" type="checkbox" id="choсolate" name="chocolate"><span class="selection__form-item-fill-custom-input"> </span><span class="selection__form-item-fill-text">шоколадные</span>
+                </label>
+                <label class="selection__form-item-fill-label" for="sugar">
+                  <input class="visually-hidden selection__form-item-fill-input" type="checkbox" id="sugar" name="sugar"><span class="selection__form-item-fill-custom-input"> </span><span class="selection__form-item-fill-text">сахарные присыпки</span>
+                </label>
+                <label class="selection__form-item-fill-label" for="fruits">
+                  <input class="visually-hidden selection__form-item-fill-input" type="checkbox" id="fruits" name="fruits"><span class="selection__form-item-fill-custom-input"> </span><span class="selection__form-item-fill-text">фрукты</span>
+                </label>
+                <label class="selection__form-item-fill-label" for="syrup">
+                  <input class="visually-hidden selection__form-item-fill-input" type="checkbox" id="syrup" name="syrup"><span class="selection__form-item-fill-custom-input"> </span><span class="selection__form-item-fill-text">сиропы</span>
+                </label>
+                <label class="selection__form-item-fill-label" for="jam">
+                  <input class="visually-hidden selection__form-item-fill-input" type="checkbox" id="jam" name="jam"><span class="selection__form-item-fill-custom-input"> </span><span class="selection__form-item-fill-text">джемы</span>
+                </label>
+              </div>
+            </fieldset>
+            <button class="selection__form-button" type="#"> <span class="selection__form-button-text">Применить</span></button>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
   </body>
