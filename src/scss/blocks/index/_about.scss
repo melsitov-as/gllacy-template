@@ -1,0 +1,69 @@
+@use '../../global.scss';
+
+.about {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 42px 0 0 0;
+}
+
+.about__container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 24px 28px 28px 22px;
+  box-sizing: border-box;
+  background: url(../../../assets/img/waffle-bg-pattern.jpg);
+  border-radius: 15px;
+}
+
+.about__title {
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-family: global.$roboto-regular;
+  font-style: normal;
+  font-size: 24px;
+  color: global.$text-black;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.about__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 530px;
+}
+
+.about__item:nth-child(2) ~ .about__item {
+  margin-top: 13px;
+}
+
+.about__item-img-container {
+  width: 49px;
+  height: 49px;
+  border: 2px solid global.$text-black;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__item-text {
+  width: 485px;
+  line-height: 22px;
+  display: block;
+  margin: 10px 0 0 5px;
+  padding: 0;
+  font-family: global.$roboto-regular;
+  font-style: normal;
+  font-size: 16px;
+  color: global.$text-black;
+}

@@ -9,7 +9,16 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/nouislider": "^9.0.10",
+    "normalize.css": "^8.0.1",
+    "nouislider": "^15.8.1",
+    "pug": "^3.0.3",
+    "sass": "^1.90.0",
     "typescript": "~5.8.3",
-    "vite": "^7.1.2"
+    "vite": "^7.1.2",
+    "vite-plugin-pug": "^0.4.1",
+    "vite-plugin-pug-transformer": "^1.0.8",
+    "vite-plugin-static-copy": "^3.1.1"
   }
 }

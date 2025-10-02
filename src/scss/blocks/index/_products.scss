@@ -1,0 +1,136 @@
+@use '../../global.scss';
+
+.products {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;
+}
+
+.products__container {
+  width: 1146px;
+  margin: 0 auto;
+}
+
+.products__list {
+  width: 1146px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__item {
+  width: 266px;
+  position: relative;
+  padding-top: 10px;
+  width: 280px;
+  height: 320px;
+  cursor: pointer;
+}
+
+.products__item:hover .products__content-container {
+  background: global.$white-transparent-3;
+  width: 280px;
+  height: 402px;
+  z-index: 10;
+}
+
+.products__item-hit-img {
+  position: absolute;
+}
+
+.products__item-img {
+  margin-bottom: 12px;
+}
+
+.products__item-price {
+  position: absolute;
+  top: 204px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  font-family: global.$roboto-bold;
+  font-style: normal;
+  font-size: 45px;
+  color: global.$basic-white;
+  text-shadow: 0 1px 3px global.$shadow-black-transparent;
+}
+
+.products__item-price span {
+  display: inline-block;
+  font-size: 30px;
+}
+
+.products__item-text-link {
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding: 0;
+  text-align: center;
+  font-family: global.$roboto-bold;
+  font-style: normal;
+  font-size: 16px;
+  color: global.$basic-white;
+  text-decoration: global.$white-transparent;
+}
+
+.products__item-text-link span {
+  display: inline-block;
+  text-align: center;
+}
+
+.products__item:hover .products__item-button {
+  display: block;
+  margin: 12px auto 0;
+}
+
+.products__item-button {
+  position: relative;
+  display: none;
+  width: 200px;
+  padding: 13px 0 12px;
+  border-radius: 25px;
+  background: linear-gradient(
+      to bottom,
+      global.$light-orange 0,
+      global.$dark-orange 100%
+    )
+    no-repeat;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.products__item-button:hover {
+  box-shadow: 0 2px 2px 0 global.$shadow-orange;
+}
+
+.products__item-button:hover::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 200px;
+  padding: 23px 0 24px;
+  border-radius: 25px;
+  background: global.$white-transparent;
+}
+
+.products__item-button:active::after {
+  display: none;
+}
+
+.products__item-button:active {
+  box-shadow: 0 -2px 2px 0 global.$shadow-orange;
+}
+
+.products__item-button-text {
+  text-align: center;
+  display: block;
+  font-family: global.$roboto-bold;
+  font-style: normal;
+  font-size: 18px;
+  color: global.$basic-white;
+  letter-spacing: 5%;
+  text-shadow: 0 2px 5px global.$shadow-orange;
+}

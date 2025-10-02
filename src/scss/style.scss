@@ -1,0 +1,17 @@
+@use 'global.scss';
+@use 'fonts.scss';
+
+@use 'blocks/_header.scss';
+@use 'blocks/_footer.scss';
+
+@use 'blocks/index/_promo.scss';
+@use 'blocks/index/_offers.scss';
+@use 'blocks/index/_products.scss';
+@use 'blocks/index/_about.scss';
+@use 'blocks/index/_news.scss';
+@use 'blocks/index/_map.scss';
+
+@use 'blocks/catalog/_breadcrumbs.scss';
+@use 'blocks/catalog/_selection.scss';
+@use 'blocks/catalog/_assortment.scss';
+@use 'blocks/catalog/_ice-cream.scss';
