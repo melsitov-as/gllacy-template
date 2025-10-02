@@ -87,7 +87,7 @@
   color: #323232;
 }
 .header__site-nav-link:active {
-  box-shadow: 0 4px 4px #31323580;
+  box-shadow: 0 4px 4px #313235;
 }
 .header__user-nav-list {
   width: 244px;
@@ -114,7 +114,7 @@
   fill: #323232;
 }
 .header__user-nav-button:active {
-  box-shadow: 0 4px 4px #31323580;
+  box-shadow: 0 4px 4px #313235;
 }
 .header__user-nav-button:hover .header__user-nav-button-text {
   color: #323232;
@@ -1211,7 +1211,7 @@
   color: #323232;
 }
 .selection__form-button:active {
-  box-shadow: 0 -2px 2px #31323580;
+  box-shadow: 0 -2px 2px #313235;
 }
 .selection__form-button-text {
   display: inline-block;
@@ -1248,7 +1248,7 @@
   justify-content: center;
 }
 .assortment__item:hover .ice-cream {
-  background: #fff3;
+  background: #fff;
   width: 280px;
   height: 402px;
   z-index: 10;
