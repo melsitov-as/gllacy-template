@@ -28,11 +28,11 @@
 
 .offers__item--rasberry {
   box-sizing: border-box;
-  background: url(../../../assets/img/malina-bg.png) no-repeat;
+  background: url(../../img/malina-bg.png) no-repeat;
 }
 
 .offers__item--chocolade {
-  background: url(../../../assets/img/chocolade-bg.jpg) no-repeat;
+  background: url(../../img/chocolade-bg.jpg) no-repeat;
 }
 
 .offers__item-title {
@@ -48,7 +48,7 @@
   margin: 0 0 42px 0;
   padding: 0;
   font-family: global.$roboto-bold;
-  font-style: none;
+  font-style: normal;
   font-size: 18px;
   color: global.$basic-white;
 }
@@ -111,7 +111,7 @@
   width: 194px;
 }
 
-.offers__utem-button-text {
+.offers__item-button-text {
   display: block;
   font-family: global.$roboto-bold;
   font-style: none;

@@ -37,8 +37,8 @@ $border-blue: #2e88e4;
 
 .page {
   // background: $bg-brown;
-  background: url(../assets/img/ice-cream-bg-pomadka.png) 630px 82px no-repeat,
-    url(../assets/img/ice-cream-bg-klubnika-sorbet.png) 944px 118px no-repeat,
+  background: url(../img/ice-cream-bg-pomadka.png) 630px 82px no-repeat,
+    url(../img/ice-cream-bg-klubnika-sorbet.png) 944px 118px no-repeat,
     radial-gradient(circle at center 42%, $white-transparent-2 0, $bg-brown 48%)
       no-repeat;
 }

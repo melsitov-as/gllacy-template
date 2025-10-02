@@ -82,7 +82,7 @@
   width: 15px;
   height: 13px;
   left: -20px;
-  background: url(../../assets/img/icons/heart-icon.svg);
+  background: url(../../img/icons/heart-icon.svg);
 }
 
 .footer__nav-link {
@@ -99,7 +99,7 @@
 }
 
 .footer__nav-link:hover.footer__nav-link--active::before {
-  background: url(../../assets/img/icons/heart-icon-hovered.svg);
+  background: url(../../img/icons/heart-icon-hovered.svg);
 }
 
 .footer__nav-link-text {
