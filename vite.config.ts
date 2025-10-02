@@ -15,7 +15,6 @@ export default defineConfig(({ mode }) => {
         input: {
           index: resolve(__dirname, `${FRONT_PATH}/index.html`),
           catalog: resolve(__dirname, `${FRONT_PATH}/catalog.html`),
-          routes: resolve(__dirname, `${FRONT_PATH}/routes.html`),
         },
         output: {
           assetFileNames: (assetInfo) => {
