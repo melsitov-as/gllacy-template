@@ -1,0 +1,1 @@
+url: https://melsitov-as.github.io/gllacy-template/index.html
