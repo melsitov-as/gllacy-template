@@ -15,21 +15,21 @@ export default defineConfig(({ mode }) => {
         input: {
           index: resolve(__dirname, `${FRONT_PATH}/index.html`),
           catalog: resolve(__dirname, `${FRONT_PATH}/catalog.html`),
-          // routes: resolve(__dirname, `${FRONT_PATH}/routes.html`),
+          routes: resolve(__dirname, `${FRONT_PATH}/routes.html`),
         },
-        // output: {
-        //   assetFileNames: (assetInfo) => {
-        //     // Проверяем, что имя файла существует и является строкой
-        //     if (
-        //       assetInfo.name &&
-        //       /\.(png|jpe?g|svg|gif|tiff|bmp|ico)$/i.test(assetInfo.name)
-        //     ) {
-        //       return `assets/img/[name].[ext]`;
-        //     }
-        //     // Если имя файла отсутствует, возвращаем стандартный шаблон или другой путь по умолчанию
-        //     return `assets/[name]-[hash].[ext]`;
-        //   },
-        // },
+        output: {
+          assetFileNames: (assetInfo) => {
+            // Проверяем, что имя файла существует и является строкой
+            if (
+              assetInfo.name &&
+              /\.(png|jpe?g|svg|gif|tiff|bmp|ico)$/i.test(assetInfo.name)
+            ) {
+              return `assets/img/[name].[ext]`;
+            }
+            // Если имя файла отсутствует, возвращаем стандартный шаблон или другой путь по умолчанию
+            return `assets/[name]-[hash].[ext]`;
+          },
+        },
       },
     },
     server: {
@@ -46,16 +46,16 @@ export default defineConfig(({ mode }) => {
           // },
         },
       }),
-      // viteStaticCopy({
-      //   targets: [
-      //     {
-      //       src: 'assets/img/**/*.*', // Путь к исходным файлам
-      //       dest: 'assets/img', // Куда их скопировать в папке сборки
-      //     },
-      //   ],
-      // }),
+      viteStaticCopy({
+        targets: [
+          {
+            src: 'assets/img/**/*.*', // Путь к исходным файлам
+            dest: 'assets/img', // Куда их скопировать в папке сборки
+          },
+        ],
+      }),
     ],
 
-    // base: '/gllacy-template/',
+    base: '/gllacy-template/',
   };
 });
